@@ -7,7 +7,6 @@ import { ARTICLE_URL, FEATURED_URL, HOMEPAGE_URL } from '~/config/utils';
 import { device } from '~/config/utils';
 import FtAnalytics from '~/config/FtAnalytics';
 import FtEvents from '~/config/FtEvents';
-import HeroImage from '~/components/HeroImage';
 import ArticleCard from '~/components/ArticleCard';
 
 const ArticleCardContainer = styled.div`
@@ -29,18 +28,8 @@ export default function Home({}) {
 				<Metadata title={true} data={null} />
 			</Head>
 
-			<HeroImage
-				imgSrc="https://ft.com/partnercontent/marriott/hero.jpeg"
-				title="Hello this is a title"
-				desc="This is a description"
-			/>
 			<ArticleCardContainer>
-				<ArticleCard
-					imgSrc="https://ft.com/partnercontent/marriott/SingaHero.jpg"
-					title="The art of travel"
-					country="singapore"
-					id="the-art-of-travel"
-				/>
+				{/* <ArticleCard id="the-art-of-travel" /> */}
 			</ArticleCardContainer>
 		</>
 	);

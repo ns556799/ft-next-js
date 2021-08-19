@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import Footer from './Footer';
 import Header from './Header';
 import Disclaimer from './Disclaimer';
-import Share from './Share';
 import BTTButton from './BTTButton';
 import { device } from '~/config/utils';
 
@@ -76,19 +75,18 @@ const GlobalStyles = createGlobalStyle`
           
 `;
 export default function Page({ children }) {
-  return (
-    <>
-      <GlobalStyles />
-      <Header />
-      <Disclaimer />
-      {children}
-      <BTTButton />
-      <Share />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<GlobalStyles />
+			<Header />
+			<Disclaimer />
+			{children}
+			<BTTButton />
+			<Footer />
+		</>
+	);
 }
 
 Page.propTypes = {
-  children: PropTypes.any,
+	children: PropTypes.any,
 };

@@ -36,7 +36,7 @@ export default class MyDocument extends Document {
 					<script
 						id={'mainOrig'}
 						async
-						src="https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-header@^7.2.9,o-footer@^6.0.2,o-typography@^5.1.1,o-colors@^4.1.1,o-viewport,o-fonts@^3.0.1,o-tracking,o-viewport"
+						src="https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-header@^7.2.9,o-footer@^6.0.2,o-typography@^5.1.1,o-colors@^4.1.1,o-viewport,o-fonts@^3.0.1,o-tracking,o-viewport,o-cookie-message"
 					></script>
 					<link
 						rel="icon"
@@ -63,7 +63,7 @@ export default class MyDocument extends Document {
 
 					<link
 						rel="stylesheet"
-						href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-header@^8.0.2,o-fonts@^4.0.2,o-fonts-assets@^1.4.0,o-footer@^7.0.2,o-typography@^6.4.4"
+						href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-header,o-fonts,o-fonts-assets,o-footer,o-typography,o-cookie-message"
 					/>
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
 					<link

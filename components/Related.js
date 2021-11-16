@@ -174,10 +174,7 @@ const RelatedHexContainer = styled.div`
 
 const Related = ({ data }) => {
 	return (
-		<RelatedContainer
-			className="container"
-			onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
-		>
+		<RelatedContainer>
 			<RelatedSubtitle>The Evolution of Growth</RelatedSubtitle>
 			<RelatedTitle>Related Content</RelatedTitle>
 			<RelatedSwiper>
@@ -209,16 +206,9 @@ const Related = ({ data }) => {
 					{data.map((slide, i) => (
 						<SwiperSlide key={i}>
 							<RelatedSlide>
-								<Link href={`/article/${slide.id}`}>
+								<Link href={`/article/`}>
 									<a>
-										<RelatedSlideImage src={slide.articleImage} />
-										<RelatedSlideTitle className="relatedTitle">
-											{slide.title}
-										</RelatedSlideTitle>
-										<RelatedSlideDesc className="relatedDesc">
-											{slide.desc}
-										</RelatedSlideDesc>
-										<RelatedIconContainer className="relatedCta"></RelatedIconContainer>
+					
 									</a>
 								</Link>
 							</RelatedSlide>

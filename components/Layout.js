@@ -72,6 +72,15 @@ const GlobalStyles = createGlobalStyle`
   main {
     position: relative;
   }
+
+  .o-cookie-message {
+    z-index: 3;
+  }
+  .o-cookie-message__heading {
+    h1 {
+      color: black;
+    }
+  }
           
 `;
 export default function Page({ children }) {

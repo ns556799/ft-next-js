@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: MetricWeb,sans-serif;
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
@@ -50,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
 
   
   h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: MetricWeb,sans-serif;
     color: #009b3a;
     line-height: 1.3;
     font-weight: 400;
@@ -63,7 +63,7 @@ const GlobalStyles = createGlobalStyle`
       }
   }
   p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: MetricWeb,sans-serif;
     color: #333333;
     line-height: 1.6;
     font-weight: 400;

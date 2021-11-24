@@ -3,7 +3,7 @@ import Head from 'next/head';
 import styled from 'styled-components';
 
 import Metadata from '~/components/Metadata';
-import { ARTICLE_URL, HOMEPAGE_URL } from '~/config/utils';
+import { ARTICLE_URL, HOMEPAGE_URL, REPORT_URL } from '~/config/utils';
 import { device } from '~/config/utils';
 import FtAnalytics from '~/config/FtAnalytics';
 import FtEvents from '~/config/FtEvents';
@@ -46,7 +46,7 @@ const IntroductionImageWrapper = styled.div`
 	background-color: black;
 `;
 
-export default function Home({}) {
+export default function Home({ reportData }) {
 	useEffect(() => {
 		FtEvents();
 		FtAnalytics();
@@ -72,15 +72,18 @@ export default function Home({}) {
 					<IntroductionImageWrapper></IntroductionImageWrapper>
 				</IntroductionContentWrapper>
 			</Introduction>
+
 			<Progression />
-			<ReportContainer />
+			<ReportContainer data={reportData} />
 		</>
 	);
 }
 export async function getStaticProps(context) {
-	const res = await fetch(HOMEPAGE_URL);
+	// const res = await fetch(HOMEPAGE_URL);
+	const fetchReport = await fetch(REPORT_URL);
 
+	const reportData = await fetchReport.json();
 	return {
-		props: {},
+		props: { reportData },
 	};
 }

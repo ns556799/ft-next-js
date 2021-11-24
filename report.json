@@ -1,10 +1,11 @@
 [
 	{
-		"id": "singapore",
+		"id": "section-one",
 		"ctaText": "EXPLORE LUXURY HOTELS IN SINGAPORE",
 		"time": 3,
+		"section": "one",
 		"metaData": {
-			"title": "Singapore: The Art of Travel Renewed",
+			"title": "Section 1",
 			"desc": "The aesthetic charms of this singular city-state go beyond its world-class collections of contemporary Asian and 20th-century European art to encompass novel ways of experiencing culture",
 			"contentType": "article",
 			"publicationDate": "2021-10-25",
@@ -35,11 +36,12 @@
 		]
 	},
 	{
-		"id": "hong-kong",
+		"id": "section-two",
 		"ctaText": "EXPLORE LUXURY HOTELS IN HONG KONG",
 		"time": 3,
+		"section": "two",
 		"metaData": {
-			"title": "Hong Kong: where East greets West",
+			"title": "Section 2",
 			"desc": "For centuries, history and fate have conspired to make Hong Kong a vital maritime link in the trade routes connecting East and West — a cosmopolitan harbour that has witnessed the endless movement of myriad peoples, precious cargo, culture and ideas",
 			"contentType": "article",
 			"publicationDate": "2021-10-25",
@@ -71,11 +73,48 @@
 		]
 	},
 	{
-		"id": "japan",
+		"id": "section-three",
 		"ctaText": "EXPLORE LUXURY HOTELS IN HONG KONG",
 		"time": 6,
+		"section": "three",
 		"metaData": {
-			"title": "Japan: a tale of two capitals",
+			"title": "Section 3",
+			"desc": "On the face of it, Tokyo and Kyoto are worlds apart — the contemporary capital representing sky-scraping clamour, the historic centre promising hieratic calm — yet Japanese tradition has a way of shining through amid the neon streets",
+			"contentType": "article",
+			"publicationDate": "2021-10-25",
+			"campaignName": "Burst 1",
+			"advertiserName": "Marriott Group",
+			"primaryIndustryAdvertiser": "Luxury Goods",
+			"contentAuthor": "client",
+			"brandedContent": true,
+			"contentStyle": "brand focussed",
+			"primaryTopic": "Life_&_Arts",
+			"secondaryTopic": "Travel",
+			"adbookId": 314383,
+			"hasVideo": false,
+			"videoStyle": null,
+			"pageDesignType": "bespoke",
+			"articleImage": "https://ft.com/partnercontent/marriott-bonvoy/article-03/A3-00.webp",
+			"articleUrl": "https://marriott-bonvoy.ft.com/article/japan"
+		},
+		"content": [
+			{
+				"id": 0,
+				"type": "content",
+				"data": {
+					"hasDropCap": true,
+					"content": "<p></p>"
+				}
+			}
+		]
+	},
+	{
+		"id": "section-four",
+		"ctaText": "EXPLORE LUXURY HOTELS IN HONG KONG",
+		"time": 6,
+		"section": "four",
+		"metaData": {
+			"title": "Section 4",
 			"desc": "On the face of it, Tokyo and Kyoto are worlds apart — the contemporary capital representing sky-scraping clamour, the historic centre promising hieratic calm — yet Japanese tradition has a way of shining through amid the neon streets",
 			"contentType": "article",
 			"publicationDate": "2021-10-25",

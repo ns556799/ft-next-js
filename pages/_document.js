@@ -65,16 +65,7 @@ export default class MyDocument extends Document {
 						rel="stylesheet"
 						href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-header,o-fonts,o-fonts-assets,o-footer,o-typography,o-cookie-message"
 					/>
-					<link rel="preconnect" href="https://fonts.googleapis.com" />
-					<link
-						rel="preconnect"
-						href="https://fonts.gstatic.com"
-						crossOrigin="true"
-					/>
-					<link
-						href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800&display=swap"
-						rel="stylesheet"
-					></link>
+					<link rel="stylesheet" href="https://use.typekit.net/aob3gaz.css" />
 					<link
 						rel="stylesheet"
 						href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.css"

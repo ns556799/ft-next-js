@@ -9,8 +9,6 @@ import FtAnalytics from '~/config/FtAnalytics';
 import FtEvents from '~/config/FtEvents';
 import ArticleCard from '~/components/ArticleCard';
 import HeroBanner from '~/components/HeroBanner';
-import ReportContainer from '~/components/Report/ReportContainer';
-import Progression from '~/components/Progression';
 
 const Introduction = styled.div`
 	max-width: 1220px;
@@ -55,26 +53,10 @@ export default function Home({ reportData }) {
 	return (
 		<>
 			<Head>
-				<title>Kaspersky</title>
+				<title>[Title]</title>
 				<Metadata title={true} data={null} />
 			</Head>
 			<HeroBanner title={'Campaign Title goes here'} />
-			<Introduction>
-				<IntroductionTitle>Introduction</IntroductionTitle>
-				<IntroductionContentWrapper>
-					<IntroductionContent>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-						nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-						erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-						et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-						Lorem ipsum dolor sit amet in secular.
-					</IntroductionContent>
-					<IntroductionImageWrapper></IntroductionImageWrapper>
-				</IntroductionContentWrapper>
-			</Introduction>
-
-			<Progression />
-			<ReportContainer data={reportData} />
 		</>
 	);
 }

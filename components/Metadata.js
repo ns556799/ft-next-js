@@ -1,17 +1,13 @@
-const Metadata = ({ data, title }) => {
+const Metadata = ({ data }) => {
 	return (
 		<>
-			{title ? null : (
-				<title>
-					{data.title} - Financial Times - Partner Content by IDA Ireland
-				</title>
-			)}
-
 			{data ? (
 				<>
 					<meta name="sponsor" content={data.advertiserName} />
 					<meta name="parent" content="Partner Content" />
 					<meta name="feature" content={data.contentType} />
+					<meta name="description" content={data.desc} />
+
 					<meta name="articleName" content={data.title} />
 					<meta name="adbook_campaign_id" content={data.adbookId} />
 					<meta name="author" content={data.contentAuthor} />
@@ -38,6 +34,7 @@ const Metadata = ({ data, title }) => {
 					<meta name="twitter:site" content="@ft_content" />
 					<meta name="twitter:creator" content="@ft_content" />
 					<meta name="twitter:domain" content="https://www.ft.com/" />
+					<link rel="canonical" href={data.articleUrl} />
 				</>
 			) : null}
 		</>

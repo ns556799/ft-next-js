@@ -90,7 +90,6 @@ export default function Page({ children }) {
 			<Header />
 			<Disclaimer />
 			{children}
-			<BTTButton />
 			<Footer />
 		</>
 	);
